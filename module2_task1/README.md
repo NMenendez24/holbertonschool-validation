@@ -25,3 +25,5 @@
 -“stop”: Stop the application with the command.
 
 -“test”: Test the aplication with curl
+
+-“lint”: Check for compilation errors in .go files
