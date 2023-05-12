@@ -2,7 +2,13 @@ build: lint ## Builds and run the site
 	@go build
 
 clean: ## Cleans the api and logs
-	@rm awesome-api awesome-api.log
+	@if [ -f ./awesome-api ]; then \
+		pkill awesome-api; \
+		rm ./awesome-api; \
+	fi
+	@if [ -f ./awesome-api.log ]; then \
+		rm ./awesome-api.log; \
+	fi
 
 post: ## Creates a new post with the name and the title given
 	@hugo new posts/$(POST_NAME).md
