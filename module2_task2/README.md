@@ -27,3 +27,5 @@
 -“test”: Test the aplication with curl
 
 -“lint”: Check for compilation errors in .go files
+
+-“unit-tests”: Performs the unit tests
