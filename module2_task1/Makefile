@@ -1,8 +1,8 @@
 build: lint ## Builds and run the site
-	@go build -o awesome-api
+	@go build
 
-clean: run ## Cleans the api and logs
-	@rm ./awesome-api ./awesome-api.log
+clean: ## Cleans the api and logs
+	@rm awesome-api awesome-api.log
 
 post: ## Creates a new post with the name and the title given
 	@hugo new posts/$(POST_NAME).md
