@@ -1,6 +1,7 @@
-build: ## Builds the site
+build: ## Builds and run the site
 	@golangci-lint run
 	@go build
+	@make run
 
 clean: ## Cleans the api and logs
 	@pkill awesome-api
