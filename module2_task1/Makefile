@@ -1,5 +1,5 @@
 build: ## Builds the site
-	@make lint
+	@golangci-lint run
 	@go build
 
 clean: ## Cleans the api and logs
