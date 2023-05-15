@@ -34,10 +34,10 @@ test: ## Tests the api
 	@make integration-tests
 
 lint: ## Checks for compilation errors
-	@golangci-lint run
+	@../golangci-lint/golangci-lint run
 
 unit-tests: ## Performs unit-tests
 	@go test -v -short -coverprofile=coverage-units.out
 
 integration-tests: ##
-	@go test -v -short -coverprofile=coverage-integrations.out
+	@go test -v -coverprofile=coverage-integrations.out
