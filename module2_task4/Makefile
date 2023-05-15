@@ -1,4 +1,5 @@
 build: lint check ## Builds and run the site
+	@hugo
 	@go build
 
 clean: ## Cleans the api, logs and coverage reports
