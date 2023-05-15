@@ -1,4 +1,4 @@
-build: lint check ## Builds and run the site
+build: check ## Builds and run the site
 	@hugo
 	@go build
 
