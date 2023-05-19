@@ -35,3 +35,9 @@
 -“check”: Check the markdown
 
 -“validate”: W3C validator
+
+## Workflow
+
+- module3_task0: this workflow clones the repository, using ubuntu-22.04 as the virtual machine, and executes the command make help to validate that the Makefile is present and implements the help target. Its triggered:
+    Each time there is new code pushed on your repository,
+    And once per day (whatever time you want).
