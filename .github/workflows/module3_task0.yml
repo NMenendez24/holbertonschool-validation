@@ -4,6 +4,9 @@ on:  # yamllint disable-line rule:truthy
     push:
     schedule:
         - cron: "* 1 * * *"
+defaults:
+    run:
+        working-directory: module3_task0
 jobs:
     help:
         runs-on: ubuntu-22.04
@@ -14,4 +17,3 @@ jobs:
             - name: Make Help
               run: |
                 make help
-                working-directory: module3_task0
