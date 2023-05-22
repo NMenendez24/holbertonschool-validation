@@ -1,0 +1,43 @@
+## Prerequisites
+
+-A Valid Go-Hugo website is provided
+
+-There are no Git Submodules
+
+-The theme ananke is installed
+
+-No directory dist/ committed
+
+-Makefile present
+
+## Lifecycle
+
+-“build”: compile the source code of the application to a binary named awesome-api
+
+-“clean”: Stop the application. Delete the binary awesome-api and the log file awesome-api.log
+
+-“post”: Create a new blog post whose filename and title come from the environment variables POST_TITLE and POST_NAME.
+
+-“help”: Displays the help for the makefile
+
+-“run”: Run the application in background by executing the binary awesome-api, and write logs into a file named awesome-api.log
+
+-“stop”: Stop the application with the command.
+
+-“test”: Test the aplication with curl
+
+-“lint”: Check for compilation errors in .go files
+
+-“unit-tests”: Performs the unit tests
+
+-“integration-tests”: Performs the integration tests
+
+-“check”: Check the markdown
+
+-“validate”: W3C validator
+
+## Workflow
+
+- module3_task0: this workflow clones the repository, using ubuntu-22.04 as the virtual machine, and executes the command make help to validate that the Makefile is present and implements the help target. Its triggered:
+    Each time there is new code pushed on your repository,
+    And once per day (whatever time you want).
